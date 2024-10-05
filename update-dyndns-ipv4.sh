@@ -27,7 +27,7 @@ login_client=home
 # key (password)
 login_key=PUT-TOKEN-HERE
 
-orig_ip=`dig AAAA +short $update_name.$update_domain @$auth_dns | awk -v ORS= '{print $1 }'`
+orig_ip=`dig A +short $update_name.$update_domain @$auth_dns | awk -v ORS= '{print $1 }'`
 # capture the IPv4 address assigned from the ISP to the WAN interface:
 pub_ip=`ifconfig igc0 | grep inet | grep -v inet6 | awk -v ORS= '{print $2 }'`
 
