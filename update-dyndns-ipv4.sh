@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # script to set dynamic dns records at rollernet.us
+# https://github.com/jjroysdon/OPNsense-rollernet-dns-update
 
 # https://acc.rollernet.us/help/dns/primary.php#ddns
 # Set either ip= or ip6=
