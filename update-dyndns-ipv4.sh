@@ -51,10 +51,10 @@ if [ -n $orig_ip ]; then
             wget -q --http-user=$login_client --http-password=$login_key -O - "https://acc.rollernet.us/dns/dynamic.php?domain=$update_domain&name=$update_name&ip=$pub_ip"
         fi
     else
-        echo Cannot determine Public IP
+        echo Cannot determine WAN IP
     fi
 else
-    echo Cannot determine Public IP
+    echo Cannot determine current DNS IP
 fi
 
 # clean up key (password)
